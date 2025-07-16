@@ -11,8 +11,8 @@ import jakarta.persistence.Table;
 public class Productos {
 	
 	@Id
-	@Column(name="id")
-	@GeneratedValue(generator = "auto")
+	@Column(name = "id", nullable = false)
+	@GeneratedValue(generator = "increment")
 	private int id;
 	
 	@Column(name="nombre")
